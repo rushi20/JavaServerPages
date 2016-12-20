@@ -11,10 +11,10 @@
 	Class.forName("com.mysql.jdbc.Driver");
 	Connection c=DriverManager.getConnection("jdbc:mysql://localhost/demo_db","root","12345");
 	Statement s8=c.createStatement();
-	String s3=(String)session.getAttribute("f");
+	String w3=(String)session.getAttribute("f");
 	String s4=(String)session.getAttribute("l");
 	
-	out.println("welcome " +s3+" "+s4);
+	out.println("welcome " +w3+" "+s4);
 	s8.close();
 	c.close();
  %>
